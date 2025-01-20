@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 40px;
+            font-family: Arial,"kanit", sans-serif;
+            background-color: rgb(255, 243, 228);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container{
+            max-width: 600px;
+            background-color: rgb(222, 255, 192);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgb(255, 207, 152);
+        }
+        input,select,textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(186, 186, 186);
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: antiquewhite;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 100px;
+        }
+        h1{
+            text-align: center;
+            color: #ff6767;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <form action=""><label for="">Name</label>
+            <input type="text" id="name" Name="name" placeholder="Enter your name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" Name="email" placeholder="Enter your email">
+            
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="Gender">Gender</label>
+            <select name="" id="">
+                <option value="">--Select Gender--</option>
+                <option value="M">เพศชาย</option>
+                <option value="F">เพศหญิง</option>
+            </select>
+            <label for="Hobbies">Hobbies</label>
+            <textarea name="hobbies" id="hobbies" cols="30" rows="5" placeholder="List your hobbies"></textarea>
+            
+            <label for="contry">Contry</label>
+            <select name="" id="">
+            <option value="">--select contry--</option>
+            <option value="thai">ไทย</option>
+            <option value="China">จีน</option>    
+            <option value="Japan">ญี่ปุ่น</option>
+            <option value="Turkey">ตุรกี</option>
+            <option value="Nepal">เนปาล</option>
+            </select>
+            <input type="submit" value="submit">
+    </div>
+</body>
+</html>
