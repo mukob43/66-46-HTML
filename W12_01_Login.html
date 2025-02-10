@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
             padding: 0;
-            background: rgb(172,255,157);
-            background: linear-gradient(90deg, rgba(172,255,157,1) 0%, rgba(255,245,128,1) 100%);
-            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(226,157,255);
+background: linear-gradient(90deg, rgba(226,157,255,1) 0%, rgba(128,165,255,1) 100%);
+            font-family: 'itim',Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -57,16 +60,27 @@
                     box-sizing: border-box;
                     margin-bottom: 8px;
                 }
-                input [type="submit"]{
-                    background-color: aqua;
+                input[type="submit"]{
+                    background-color: rgb(204, 70, 200);
                     color: #ffffff;
                     border: none;
                     padding: 10px;
                     cursor: pointer;
                 }
+                input[type="submit"]:hover{
+                    background-color: rgb(144, 40, 140);
             }
 
         }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover{
+            text-decoration: none;
+            color: rgb(142, 52, 124);
+        }
+    }
     </style>
 </head>
 <body>
@@ -84,7 +98,7 @@
         
         <label for="">Password</label>
         <input type="text" id="password" Name="password" minlength="30" required placeholder="Enter your Password" required>
-        <input type="summit" value="Login">
+        <input type="submit" value="Login">
 
         </form>
         <p>Forgot <a href="">Password?</a></p>

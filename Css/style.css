@@ -1,5 +1,6 @@
 header{
 background-color: rgb(222, 231, 137);
+margin-bottom: 20px;
 }
 nav{
     display: flex;
@@ -75,6 +76,21 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(208, 247, 222);
+}
+a{
+    text-decoration: none;
+    color: #5d20a3;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff8080;
+}
+.btn-primary:hover{ 
+    text-decoration: none;
+    background-color: rgb(1, 1, 133);
+}
+.btn-secondary:hover{
+    background-color: rgb(203, 203, 203);
 }
 
 
