@@ -15,14 +15,45 @@
         padding: 1px;
         margin: 0 auto; 
     }
+    footer{
+        background-color: rgb(162, 255, 198);
+        text-align: center;
+        padding: 1px;
+        margin: 0 auto; 
+    }
+    ul.circle{
+        list-style-type: circle;
+    }
+    button{
+        background-color: rgb(255, 204, 141);
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0px 1px 3px black;
+        float: right;
+        
+    }
+    h2{
+        text-align: center;
+    }
+    .container{
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .maintable{
+        border-radius: 10px;
+    }
+    table,td,tr,th{
+        align-items: center;
+    }
+
 
 </style>
 <body>
     <header>
         <h1><span style="color: rgb(76, 160, 28);">รายงานผลเกรด...</span>Mr.Kobphong Yusatid</h1>
     </header>
-
-           <table> 
+    <div class ="container">
+           <table class = maintable style="background-color: rgb(169, 255, 196);" width ="800px"> 
         <tr>
             <td>
                 <td><img src="images/Npru-logo.png" alt="npru-logo"width="100"></td>
@@ -39,7 +70,7 @@
                 </table>
     </table>
     <h2>รายงานผลเกรด</h2>
-    <table border="1" style="width: 800px;">
+    <table border="1" style="width: 800px;" >
         <tr style="background-color: aqua;">
           <th>รหัสวิชา</th>
           <th>ชื่อวิชา</th>
@@ -59,15 +90,20 @@
           <td style="text-align: center;">B</td>
         </tr>
         </table>
-        <tr>
-            <td colspan="2">
-                <p>มหาวิทยาลัยราชภัฏนครปฐม <br>
+        <h1>หมายเหตุ</h1>
+        <ul class="circle">
+            <li>เกรดที่แสดงจะทำการคำนวนเกรดรายวิชา</li>
+            <li>Transcript จะถือค่าที่ได้คำนวนเก็บไว้ ณ วันสิ้นภาค</li>
+          
+        </ul>
+    </div>
+           <footer>
+                <p>&copy Webmaster by Kobphong Yusatid. IT 664230036. <br>
                 Nakhon Pathom Rajabhat University <br>
-                 85 ถนนมาลัยแมน ต.นครปฐม อ.เมือง จ.นครปฐม 73000</p>
-                
-            </td>
-        </tr>
-    </table>
+                 </p>
+                </footer>
+    
+
     
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: rgb(172,255,157);
+            background: linear-gradient(90deg, rgba(172,255,157,1) 0%, rgba(255,245,128,1) 100%);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: white;
+            width: 700px;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px grey;
+
+        }
+        .img{
+            background-image: url(images/three.jpg);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0,0.5);
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            text-transform: uppercase;
+            width: 60%;
+        }
+        .Login{
+            padding: 40px;
+            width: 40%;
+            form{
+                label{
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    
+                }
+                input{
+                    padding: 6px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin-bottom: 8px;
+                }
+                input [type="submit"]{
+                    background-color: aqua;
+                    color: #ffffff;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+        <h2>Information Technology</h2>
+        <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิขาการออกแบบและพัฒนาเว็บไซต์</p>
+            
+        </div>
+        <div class="Login">
+        <h3>Login</h3>
+        <form action="" method="post">
+        <label for="">username</label>
+        <input type="text" id="username" Name="username" minlength="30" required placeholder="Enter your Username" required>
+        
+        <label for="">Password</label>
+        <input type="text" id="password" Name="password" minlength="30" required placeholder="Enter your Password" required>
+        <input type="summit" value="Login">
+
+        </form>
+        <p>Forgot <a href="">Password?</a></p>
+        <p>Don't have any account? <a href="">Register</a></p>
+            
+        </div>
+    </div>
+</body>
+</html>
