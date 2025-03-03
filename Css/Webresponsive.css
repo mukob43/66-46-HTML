@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(109, 185, 84);
-    --secondary-color: rgb(251, 255, 150);
+    --primary-color: rgb(55, 118, 34);
+    --secondary-color: rgb(244, 255, 150);
     --teaxt-color-nomal: black;
     --base-color-white: white;
     --background-color: gray;
@@ -29,17 +29,17 @@
   .logo-manu {
     display: flex;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    img{
-        width: 30px;
-        height: auto;
+    img {
+      width: 25px;
+      height: auto;
     }
   }
   /*button section*/
-
+  .header-button {
+  }
   .btn-fill {
     background-color: var(--primary-color);
     color: var(--base-color-white);
@@ -75,7 +75,7 @@
     a {
       text-decoration: none;
       font-weight: bold;
-      color: rgb(26, 26, 179);
+      color: blue;
     }
     a:hover {
       color: var(--primary-color);
