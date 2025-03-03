@@ -190,9 +190,4 @@ h2{
 h3{
     color: var(--primary-color);
 }
-.footer-all-menu{
-    display: flex;
-    ul{
-        display: block;
-    }
-}
+
