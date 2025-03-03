@@ -33,13 +33,11 @@
     display: flex;
     align-items: center;
     img {
-      width: 25px;
+      width: 30px;
       height: auto;
     }
   }
   /*button section*/
-  .header-button {
-  }
   .btn-fill {
     background-color: var(--primary-color);
     color: var(--base-color-white);
