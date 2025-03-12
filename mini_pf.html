@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <style>
+     body {
+            font-family: Verdana, Tahoma, sans-serif;
+            background-color: rgb(255, 248, 237);
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  /* จัดกลางในแนวตั้ง */
+            height: 100vh;  /* ใช้ความสูงของ viewport ทั้งหมด */
+            color: #ffffff;
+        }
+    h1 {
+        text-align: center;
+    }
+    .container {
+        width: auto;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgb(253, 239, 217);
+        border-radius: 30px;
+        height: auto;
+        background-image: url(images/ani.avif);
+        background-size: cover;
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0,0.6);
+    }
+    a {
+        text-decoration: none;
+        color: #ff3737;
+    }
+    a:hover{
+        color: rgb(50, 88, 255);
+    }
+    .profile {
+        display: flex;
+        flex-direction: row; /* ให้รูปอยู่ทางซ้ายและข้อความทางขวา */
+        align-items: flex-start; /* จัดให้รูปอยู่ที่ด้านบน */
+    }
+    .profile  {
+        img{
+        width: 150px;  /* ขนาดของรูป */
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 20px; /* ระยะห่างระหว่างรูปกับข้อความ */
+        }
+    }
+    .space {
+        P{
+            margin: 5px 0; /* เพิ่มระยะห่างระหว่างย่อหน้า */
+        }
+        h3{
+            margin: 5px 0;
+        }
+    }
+
+    /* ปรับให้ดีขึ้นในหน้าจอขนาดเล็ก */
+   
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ประวัติส่วนตัว</h1>
+        <hr>
+        <div class="profile">
+            <img src="images/mini 01.jpg" alt="">
+            <div class="space">
+                <h3>ข้อมูลส่วนตัว</h3>
+                <p>ชื่อ-นามสกุล : กอบพงศ์ อยู่สถิตย์</p>
+                <p>ชื่อเล่น : กอบ</p>
+                <p>ว/ด/ป : 27/10/1999</p>
+                <p>อายุ : 25</p>
+                <p>สัญชาติ : ไทย เชื้อชาติ : ไทย</p>
+                <hr>
+                <h3>การติดต่อ</h3>
+                <p>เบอร์โทรศัพท์ : 0982767180</p>
+                <p>ที่อยู่ : 3/2 หมู่ 4 ต.ทุ่งทอง อ.ท่าม่วง จ.กาญจนบุรี 71110</p>
+                <p>email : 664230036@webmail.npru.ac.th</p>
+                <p>Line ID : arm.zpr</p>
+                <hr>
+                <h3>งานอดิเรก</h3>
+                <p>ดื่มแอลกอฮอล์,เล่นเกม,ดูหนัง</p>
+                <hr>
+                <h3>การศึกษา</h3>
+                <p>มหาวิทยาลัยราชภัฏนครปฐม <br>คณะวิทยาศาสตร์และเทคโนโลยี สาขาเทคโนโลยีสารสนเทศ</p>
+                <hr>
+               
+            </div>
+             
+        </div><a href="mini_intro.html">Back to Home</a>
+    </div>
+    
+</body>
+</html>
