@@ -59,7 +59,11 @@
             color: rgb(234, 147, 71);
         }
         .card{
-            width: 80%;
+            width: 100%;
+        }
+        .img-size{
+            width: auto;
+            height: 30px;
         }
     </style>
 </head>
@@ -69,7 +73,7 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container">
         <div class="d-flex align-items-center">
-            <img src="images/Logo-warga.png" alt="" style="width: 24px;">
+            <img src="images/Logo-warga.png" alt="" style="width: 24px;"class="clickable-image">
             <a class="navbar-brand ms-2 d" href="#">Warga</a>
         </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,7 +171,7 @@
     <div class="row">
         <!-- Column1 -->
         <div class="col-md-4 mb-4">
-            <div class="card pricing-card p-4">
+            <div class="card pricing-card p-4  m-auto">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price ">$0</p>
                 <p class="text-muted">per month</p>
@@ -183,7 +187,7 @@
         
         <!-- Column2 -->
         <div class="col-md-4 mb-4">
-            <div class="card pricing-card p-4">
+            <div class="card pricing-card p-4  m-auto">
                 <h3 class="plan-title text-primary">Pro Plan</h3>
                 <p class="plan-price">$29</p>
                 <p class="text-muted">per month</p>
@@ -199,7 +203,7 @@
 
         <!-- Column3 -->
         <div class="col-md-4 mb-4">
-            <div class="card pricing-card p-4">
+            <div class="card pricing-card p-4  m-auto">
                 <h3 class="plan-title text-primary">Member Plan</h3>
                 <p class="plan-price">$49</p>
                 <p class="text-muted">per month</p>
@@ -221,44 +225,82 @@
  <div class="container-fluid bg-body-secondary">
     <div class="container bg-body-secondary py-5">
         <div class="card p-5 m-auto">
-            <h1>MEMBER</h1>
+            <h1 class="text-center text-uppercase text-danger text-bg-dark">MEMBER</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, officia esse. Quam nulla aperiam eum 
                 voluptatibus maiores? Recusandae, id ipsam!</p>
-            <table>
-                <tr>
-                    <td>#</td>
-                    <td>Name</td>
-                    <td>Position</td>
-                    <td>Start Date</td>
-                    <td>Photo</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Kobphong Yusatid</td>
-                    <td>Developer</td>
-                    <td>2005-15-25</td>
-                    <td><img src="images/rabbit2.jpg" alt="" style width="100px"></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Kobphong Yusatid</td>
-                    <td>Developer</td>
-                    <td>2005-15-25</td>
-                    <td><img src="images/rabbit3.jpg" alt="" style width="100px"></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Kobphong Yusatid</td>
-                    <td>Developer</td>
-                    <td>2005-15-25</td>
-                    <td><img src="images/rabbit2.jpg" alt="" style width="100px"></td>
-                </tr>
-                
-            </table>
+                <!-- creat Table -->
+                <table class="table table-hover table-responsive">
+                    <thead>
+                      <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        <th scope="col">Photo</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><img src= "images/rabbit2.jpg" alt="rabbit2" class="img-size img-thumbnail clickable-image"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><img src="images/rabbit3.jpg" alt="rabbit3" class="img-size img-thumbnail clickable-image"></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry the Bird</td>
+                        <td>Jack</td>
+                        <td>@twitter</td>
+                        <td><img src="images/rabbit2.jpg" alt="rabbit2" class= " img-size img-thumbnail clickable-image"></td>
+                      </tr>
+                    </tbody>
+                  </table>
         </div>
     </div>
  </div>
 
+ <div class="container-fluid bg-body-secondary">
+    <div class="container bg-body-secondary">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-capitalize">Contact US</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a ab ratione reprehenderit dolores 
+                    quibusdam, provident eius mollitia tempore enim.</p>
+                <p>Address : Nakorn phathom</p>
+                <p>Phone : +66 98-2767180</p>
+            </div>
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Email address</label>
+                      <input type="password" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" class="form-control"rows="4" ></textarea>
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+ </div>
 <!-- Footer -->
 <div class="container-fluid bg-dark text-white p-4">
     <p class="text-center">@copyright by Kobphong</p> 
@@ -273,5 +315,88 @@
 
     <!-- Lastest complied Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script>
+    //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+
+    document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+        img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+
+            Swal.fire({
+                //title: 'Image Preview',
+                imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+                imageWidth: 500, // ขนาดรูปที่ขยาย
+                imageHeight: 'auto',
+                imageAlt: img.alt, // ใช้ alt ของรูป
+                //showCloseButton: true,
+                //confirmButtonText: 'ปิด',
+                
+            });
+        });
+    });
+</script>
+
+
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            Swal.fire({
+                title: 'Success!',
+               // text: 'Your message has been sent.',
+
+                //text: 'Your message has been sent.\n\n' +
+                //'Name: ' + name + '\n' +
+                //'Email: ' + email + '\n' +
+                //'Message: ' + message,
+
+                html: `<p>Your message has been sent.</p>
+                <p><b>Name:</b> ${name}</p>
+                <p><b>Email:</b> ${email}</p>
+                <p><b>Message:</b> ${message}</p>`,
+
+                icon: 'success',
+                confirmButtonText: 'OK',
+
+
+                //showConfirmButton: false,
+                timer: 3500
+
+
+            }).then(() => {
+                // Optional: Reset form after submission
+                document.getElementById('contactForm').reset();
+            });
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please fill out all fields.',
+                icon: 'error',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'red',
+                timer: 3500
+            });
+        }
+    });
+</script>
+
+
+
+
+
+
 </body>
 </html>
